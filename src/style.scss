@@ -1,9 +1,16 @@
 $mainColor: #424242;
 
-@mixin title($fontS: 32px, $fontW: 700) {
+@mixin title($fontS: 32px, $fontW: 700, $lHeight: 74px) {
 	font-style: normal;
 	font-weight: $fontW;
 	font-size: $fontS;
+}
+
+@mixin subtitle($fontS: 16px, $fontW: 400, $color: #6F6F6F, $lHeight: 20px) {
+	font-weight: $fontS;
+	font-size: $fontW;
+	color: $color;
+	line-height: $lHeight;
 }
 
 html,
@@ -127,14 +134,14 @@ a:active {
 		color: $mainColor;
 		font-style: normal;
 		line-height: 20px;
-		@include title(16px, 500);
+		@include title(16px, 500, 20px);
 
 		@media(max-width:920px) {
-			@include title(14px, 500);
+			@include title(14px, 500, 20px);
 		}
 
 		@media(max-width:576px) {
-			@include title(12px, 500);
+			@include title(12px, 500, 20px);
 		}
 
 		svg {
@@ -455,7 +462,7 @@ a:active {
 		}
 
 		&__subtitle {
-			@include title(32px, 500);
+			@include title(32px, 500, 39px);
 			max-width: 520px;
 			display: block;
 			color: #fff;
@@ -474,5 +481,54 @@ a:active {
 			}
 		}
 	}
+
+	.about {
+		margin-top: 100px;
+
+		&__container {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+
+		}
+
+		&__box {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			&:last-child {
+				align-items: flex-end
+			}
+		}
+
+		&__title {
+			@include title();
+			position: relative;
+
+			&::after {
+				content: '';
+				display: block;
+				background: #E42624;
+				width: 200px;
+				height: 4px;
+				bottom: 0px;
+				position: absolute;
+				margin-bottom: -10px;
+			}
+		}
+
+		&__subtitle {
+			@include subtitle();
+			margin-top: 45px;
+
+		}
+
+		&__img {
+			max-width: 460px;
+			max-height: 310px;
+		}
+	}
+
+
 
 }
