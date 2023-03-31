@@ -438,7 +438,8 @@ a:active {
 		align-items: center;
 		justify-content: center;
 		background-repeat: no-repeat;
-		background-image: linear-gradient(100.84deg, rgba(17, 15, 83, 0.52) 0%, rgba(20, 18, 101, 0.36) 100%), url('/images/background-greeting.jpg');
+		background-image: linear-gradient(100.84deg, rgba(17, 15, 83, 0.52) 0%, rgba(20, 18, 101, 0.36) 100%),
+			url('/src/images/background-greeting.jpg');
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
