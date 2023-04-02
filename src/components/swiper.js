@@ -1,35 +1,38 @@
-import Swiper, {
-	Navigation,
-	Pagination
-} from 'swiper';
-import 'swiper/css';
-import 'swiper/css/bundle';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
-
-Swiper.use({
-	Navigation,
-	Pagination
-})
-const swiper = new Swiper('.swiper', {
-	// Optional parameters
-	direction: 'vertical',
+import "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+import 'swiper/swiper-bundle.css';
+const swiper = new Swiper(".mySwiper", {
+	spaceBetween: 10,
+	slidesPerView: 4,
+	freeMode: true,
+	watchSlidesProgress: true,
 	loop: true,
-
-	// If we need pagination
-	pagination: {
-		el: '.swiper-pagination',
-	},
-
-	// Navigation arrows
+});
+const swiper2 = new Swiper(".mySwiper2", {
+	spaceBetween: 10,
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
 	},
-
-	// And if we need scrollbar
-	scrollbar: {
-		el: '.swiper-scrollbar',
+	thumbs: {
+		swiper: swiper,
 	},
+	loop: true,
+});
+const swiper3 = new Swiper(".mySwiper3", {
+	spaceBetween: 10,
+	slidesPerView: 4,
+	freeMode: true,
+	watchSlidesProgress: true,
+	loop: true,
+});
+const swiper4 = new Swiper(".mySwiper4", {
+	spaceBetween: 10,
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+	thumbs: {
+		swiper: swiper,
+	},
+	loop: true,
 });
