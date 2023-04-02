@@ -37,7 +37,7 @@ document.addEventListener("click", (e) => {
 			});
 		});
 	})
-	if (window.innerWidth >= 768) {
+	if (window.innerWidth > 768) {
 		document.querySelectorAll("[data-offcanvas].active").forEach((offcanvas) => {
 			offcanvas.classList.remove("active");
 			backgourndOpacity.classList.remove("active");
@@ -47,7 +47,7 @@ document.addEventListener("click", (e) => {
 		});
 	}
 	window.addEventListener('resize', function (event) {
-		if (window.innerWidth >= 768) {
+		if (window.innerWidth > 768) {
 			document.querySelectorAll("[data-offcanvas].active").forEach((offcanvas) => {
 				offcanvas.classList.remove("active");
 				backgourndOpacity.classList.remove("active");
