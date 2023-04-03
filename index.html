@@ -17,12 +17,11 @@
 </head>
 
 <body>
-
-	<header class="header">
+	<!-- <header class="header">
 		<div class="container header__container">
 			<div class="header__box">
 				<a href="#" class="header__logo-link">
-					<img src="/src/images/logo.svg" alt="" class="header__logo-img">
+					<img src="/assets/images/logo.svg" alt="" class="header__logo-img">
 				</a>
 				<span class="header__location">
 					Санкт-Петербург, Матроса Железняка, д. 57, оф. 120Н
@@ -31,13 +30,13 @@
 			<div class="header__box">
 				<a href="#" class="header__link">
 					<svg width="20" height="20">
-						<use xlink:href="/src/images/sprite.svg#phone" />
+						<use xlink:href="/assets/images/sprite.svg#phone" />
 					</svg>
 					+7 (812) 678-96-88
 				</a>
 				<a href="#" class="header__link">
 					<svg width="20" height="20">
-						<use xlink:href="/src/images/sprite.svg#email" />
+						<use xlink:href="/assets/images/sprite.svg#email" />
 					</svg>
 					info@rapgs.ru
 				</a>
@@ -60,7 +59,7 @@
 					<button class="navigation__offcanvas-btn" data-offcanvas-button>
 
 						<svg data-offcanvas-button width="32" height="16" class="navigation__offcanvas-img">
-							<use xlink:href="/src/images/sprite.svg#burger" data-offcanvas-button />
+							<use xlink:href="/assets/images/sprite.svg#burger" data-offcanvas-button />
 						</svg>
 					</button>
 
@@ -68,7 +67,7 @@
 
 						<button class="navigation__offcanvas-btn-close">
 							<svg data-offcanvas-button width="15" height="16" class="navigation__offcanvas-img">
-								<use xlink:href="/src/images/sprite.svg#close" data-offcanvas-button />
+								<use xlink:href="/assets/images/sprite.svg#close" data-offcanvas-button />
 							</svg>
 						</button>
 
@@ -89,11 +88,60 @@
 
 			</div>
 		</nav>
+	</header> -->
+	<header class="header">
+		<div class="header__description">
+			<div class="container">
+				<a href="#" class="header__logo">
+					<img src="assets/images/logo.svg" alt="ра пгс">
+				</a>
+				<div class="header__information-box">
+					<address class="header__information-item">Санкт-Петербург, Матроса Железняка, д. 57, оф. 120Н</address>
+					<div class="header__information">
+						<a href="" class="header__information-item header__information-item_link">
+							<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href="assets/images/phone.svg#phone"></use>
+							</svg>
+							+7 (812) 678-96-88
+						</a>
+						<a href="" class="header__information-item header__information-item_link">
+							<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href="assets/images/mail.svg#mail"></use>
+							</svg>
+							info@rapgs.ru
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__menu-box">
+			<div class="container">
+				<nav class="header__menu menu" data-menu="close">
+					<button class="menu__close" data-menu-close>
+						<img src="assets/images/close.svg" alt="open">
+					</button>
+					<a href="#" class="menu__item menu__item_active">Главная</a>
+					<span class="menu__separator"></span>
+					<a href="#" class="menu__item">О компании</a>
+					<span class="menu__separator"></span>
+					<a href="#" class="menu__item">Реализуемые проекты</a>
+					<span class="menu__separator"></span>
+					<a href="#" class="menu__item">Реализованные проекты</a>
+					<span class="menu__separator"></span>
+					<a href="#" class="menu__item">Карьера</a>
+					<span class="menu__separator"></span>
+					<a href="#" class="menu__item">Новости</a>
+					<span class="menu__separator"></span>
+					<a href="#" class="menu__item">Контакты</a>
+				</nav>
+			</div>
+			<button class="menu__open" data-menu-open>
+				<img src="assets/images/burger.svg" alt="open">
+			</button>
+		</div>
 	</header>
-
-
 	<main class="main">
-		<section class="greeting">
+		<!-- <section class="greeting">
 			<div class="container greeting__container">
 				<h1 class="greeting__title">ООО «РА ПГС»</h1>
 				<div class="greeting__subtitle">
@@ -106,8 +154,14 @@
 					</span>
 				</div>
 			</div>
+		</section> -->
+		<section class="hero">
+			<div class="container">
+				<h1 class="hero__title">ООО «РА ПГС»</h1>
+				<span class="hero__text">Мы строим <br> Жилые комплексы и объекты социальной инфраструктуры</span>
+			</div>
 		</section>
-		<section class="about">
+		<!-- <section class="about">
 			<div class="container about__container">
 				<div class="about__box">
 					<h2 class="about__title">О компании</h2>
@@ -122,22 +176,22 @@
 					</p>
 				</div>
 				<div class="about__box">
-					<img src="/src/images/about.png" alt="" class="about__img">
+					<img src="/assets/images/about.png" alt="" class="about__img">
 				</div>
 
 			</div>
-		</section>
-		<section class="advantages">
+		</section> -->
+		<!-- <section class="advantages">
 			<div class="container advantages__container">
 				<div class="advantages__box">
-					<img src="/src/images/advantages.png" alt="" class="advantages__img">
+					<img src="/assets/images/advantages.png" alt="" class="advantages__img">
 				</div>
 				<div class="advantages__box">
 					<h2 class="advantages__title">О компании</h2>
 					<ul class="advantages__items">
 						<li class="advantages__item">
 							<svg width="32" height="32" class="advantages__short-img">
-								<use xlink:href="/src/images/sprite.svg#tool-kit" />
+								<use xlink:href="/assets/images/sprite.svg#tool-kit" />
 							</svg>
 							<p class="advantages__subtitle">
 								Уникальный набор компетенций – от участия в разработке технического задания на проектирование до
@@ -149,7 +203,7 @@
 						</li>
 						<li class="advantages__item">
 							<svg width="32" height="32" class="advantages__short-img">
-								<use xlink:href="/src/images/sprite.svg#worker" />
+								<use xlink:href="/assets/images/sprite.svg#worker" />
 							</svg>
 							<p class="advantages__subtitle">
 								В команду ООО «РА ПГС» входят специалисты, ранее осуществлявшие руководство строительством жилых
@@ -163,7 +217,7 @@
 						</li>
 						<li class="advantages__item">
 							<svg width="32" height="32" class="advantages__short-img">
-								<use xlink:href="/src/images/sprite.svg#tractor" />
+								<use xlink:href="/assets/images/sprite.svg#tractor" />
 							</svg>
 							<p class="advantages__subtitle">
 								Специализированная техника находится в собственности, что позволяет свести к минимуму
@@ -178,10 +232,8 @@
 					</ul>
 				</div>
 			</div>
-		</section>
-
-
-		<section class="current-projects">
+		</section> -->
+		<!-- <section class="current-projects">
 			<div class="container current-projects__container">
 				<div class="current-projects__box">
 					<h2 class="current-projects__title">Реализуемые объекты</h2>
@@ -193,11 +245,11 @@
 				<div class="current-projects__box">
 					<div class="current-projects__item">
 						<div class="current-projects__imgs">
-							<img src="/src/images/current-project1.png" alt=""
+							<img src="/assets/images/current-project1.png" alt=""
 								class="current-projects__img current-projects__img-main">
 							<div>
-								<img src="/src/images/current-project2.png" alt="" class="current-projects__img">
-								<img src="/src/images/current-project3.png" alt="" class="current-projects__img">
+								<img src="/assets/images/current-project2.png" alt="" class="current-projects__img">
+								<img src="/assets/images/current-project3.png" alt="" class="current-projects__img">
 							</div>
 						</div>
 						<div class="current-projects__info">
@@ -221,11 +273,11 @@
 					</div>
 					<div class="current-projects__item">
 						<div class="current-projects__imgs">
-							<img src="/src/images/current-project1.png" alt=""
+							<img src="/assets/images/current-project1.png" alt=""
 								class="current-projects__img current-projects__img-main">
 							<div>
-								<img src="/src/images/current-project2.png" alt="" class="current-projects__img">
-								<img src="/src/images/current-project3.png" alt="" class="current-projects__img">
+								<img src="/assets/images/current-project2.png" alt="" class="current-projects__img">
+								<img src="/assets/images/current-project3.png" alt="" class="current-projects__img">
 							</div>
 						</div>
 						<div class="current-projects__info">
@@ -249,11 +301,11 @@
 					</div>
 					<div class="current-projects__item">
 						<div class="current-projects__imgs">
-							<img src="/src/images/current-project1.png" alt=""
+							<img src="/assets/images/current-project1.png" alt=""
 								class="current-projects__img current-projects__img-main">
 							<div>
-								<img src="/src/images/current-project2.png" alt="" class="current-projects__img">
-								<img src="/src/images/current-project3.png" alt="" class="current-projects__img">
+								<img src="/assets/images/current-project2.png" alt="" class="current-projects__img">
+								<img src="/assets/images/current-project3.png" alt="" class="current-projects__img">
 							</div>
 						</div>
 						<div class="current-projects__info">
@@ -277,11 +329,11 @@
 					</div>
 					<div class="current-projects__item">
 						<div class="current-projects__imgs">
-							<img src="/src/images/current-project1.png" alt=""
+							<img src="/assets/images/current-project1.png" alt=""
 								class="current-projects__img current-projects__img-main">
 							<div>
-								<img src="/src/images/current-project2.png" alt="" class="current-projects__img">
-								<img src="/src/images/current-project3.png" alt="" class="current-projects__img">
+								<img src="/assets/images/current-project2.png" alt="" class="current-projects__img">
+								<img src="/assets/images/current-project3.png" alt="" class="current-projects__img">
 							</div>
 						</div>
 						<div class="current-projects__info">
@@ -306,10 +358,8 @@
 					<a href="#" class="current-projects__see-more">Смотреть все</a>
 				</div>
 			</div>
-		</section>
-
-
-		<section class="current-projects">
+		</section> -->
+		<!-- <section class="current-projects">
 			<div class="container current-projects__container">
 				<div class="current-projects__box">
 					<h2 class="current-projects__title">Реализуемые объекты</h2>
@@ -376,13 +426,13 @@
 								style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide swiper-wrapper__upper">
-										<img src="src/images/last-project1.png" />
+										<img src="assets/images/last-project1.png" />
 									</div>
 									<div class="swiper-slide">
-										<img src="src/images/last-project2.png" />
+										<img src="assets/images/last-project2.png" />
 									</div>
 									<div class="swiper-slide">
-										<img src="src/images/last-project3.png" />
+										<img src="assets/images/last-project3.png" />
 									</div>
 								</div>
 								<div class="swiper-button-next"></div>
@@ -391,13 +441,13 @@
 							<div thumbsSlider="" class="swiper mySwiper3">
 								<div class="swiper-wrapper swiper-wrapper__under">
 									<div class="swiper-slide">
-										<img src="src/images/last-project1.png" />
+										<img src="assets/images/last-project1.png" />
 									</div>
 									<div class="swiper-slide">
-										<img src="src/images/last-project2.png" />
+										<img src="assets/images/last-project2.png" />
 									</div>
 									<div class="swiper-slide">
-										<img src="src/images/last-project3.png" />
+										<img src="assets/images/last-project3.png" />
 									</div>
 								</div>
 							</div>
@@ -424,11 +474,8 @@
 					<a href="#" class="last-projects__see-more">Смотреть все</a>
 				</div>
 			</div>
-		</section>
-
-
+		</section> -->
 	</main>
-
 </body>
 
 <script type="module" src='main.js'></script>
