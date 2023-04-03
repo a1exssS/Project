@@ -6,10 +6,10 @@ const closeButton = document.querySelector('[data-menu-close]')
 function toggleMenu() {
 	if(menu.getAttribute('data-menu') === 'open') {
 		menu.dataset.menu = 'close'
-		disableBodyScroll(menu)
+		enableBodyScroll(menu)
 	} else {
 		menu.dataset.menu = 'open'
-		enableBodyScroll(menu)
+		disableBodyScroll(menu)
 	}
 }
 
